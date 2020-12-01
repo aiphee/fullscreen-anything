@@ -2,7 +2,7 @@
   "description": "Let user seelect element to maximize",
   "manifest_version": 2,
   "name": "fullscreen-anything",
-  "version": "1.0",
+  "version": "1.1",
   "icons": {
     "48": "icon.svg"
   },
