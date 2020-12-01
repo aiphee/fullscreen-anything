@@ -1,5 +1,5 @@
 {
-  "description": "Let user seelect element to maximize",
+  "description": "Let user select element to maximize",
   "manifest_version": 2,
   "name": "fullscreen-anything",
   "version": "1.1",
@@ -8,7 +8,7 @@
   },
   "applications": {
     "gecko": {
-      "id": "forstjiri@gmail.com"
+      "id": "{12d7a739-b2b7-451e-8cde-057bf84783fa}"
     }
   },
   "background": {
