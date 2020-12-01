@@ -1,5 +1,4 @@
 {
-
   "description": "Let user seelect element to maximize",
   "manifest_version": 2,
   "name": "fullscreen-anything",
@@ -7,31 +6,27 @@
   "icons": {
     "48": "icon.svg"
   },
-
   "applications": {
     "gecko": {
       "id": "forstjiri@gmail.com"
     }
   },
-
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   },
-
   "page_action": {
     "default_icon": "icon.svg",
     "browser_style": true
   },
-
- "browser_action": {
+  "browser_action": {
     "default_icon": "icon.svg",
     "default_title": "Select element to go fullscreen"
   },
-  
   "permissions": [
     "activeTab"
   ],
-
   "commands": {
     "activate": {
       "suggested_key": {

@@ -1,17 +1,18 @@
-let executeScript = browser.tabs.executeScript(tab.id, {
-	file: '/content-script.js'
-});
-
-console.log('qqqqqqqqq');
+let executeScript = (tab) => {
+	browser.tabs.executeScript(tab.id, {
+		file: '/content-script.js'
+	});
+};
 
 browser.browserAction.onClicked.addListener((tab) => {
-	console.log('ff');
-	executeScript();
+	executeScript(tab);
 });
 
 browser.commands.onCommand.addListener((command) => {
-	console.log('hh');
+	console.log({sender});
 	if (command === 'activate') {
-		executeScript();
+		browser.tabs.query({active: true, windowId: browser.windows.WINDOW_ID_CURRENT})
+			.then(tabs => browser.tabs.get(tabs[0].id))
+			.then(executeScript);
 	}
 });
